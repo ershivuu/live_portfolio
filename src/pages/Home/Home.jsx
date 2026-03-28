@@ -41,6 +41,7 @@ function Home() {
       <div>
         <About />
         <Signature />
+        <Footer />
       </div>
     </>
   );
