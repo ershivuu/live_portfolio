@@ -1,0 +1,137 @@
+.service-section {
+    max-width: 1550px;
+    margin: auto;
+}
+
+.service-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+.service-heading p:nth-child(1) {
+    font-size: 10rem;
+    font-family: var(--font-family-heading);
+}
+
+.service-heading p:nth-child(2) {
+    font-size: 1rem;
+    font-family: var(--font-family-base);
+}
+
+
+.bg-img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+
+}
+
+.bg-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+
+@keyframes pulse {
+    0% {
+        scale: 0.98;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.services-container {
+    margin-top: 20%;
+}
+
+.service-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* mix-blend-mode: luminosity !important; */
+    animation: pulse 0.8s infinite alternate-reverse;
+}
+
+.service-img {
+    width: 100%;
+    max-width: 600px;
+    padding: 3%;
+
+}
+
+.service-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(201, 200, 200, 0.405);
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    margin-block: 3%;
+}
+
+.service-type:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.abt-service {
+    max-width: 600px;
+    padding-inline: 2%;
+}
+
+.service-name {
+    font-family: var(--font-family-heading);
+    font-size: 3rem;
+}
+
+.service-description {
+    font-size: 1.2rem;
+    font-family: var(--font-family-base);
+    color: rgba(103, 102, 102, 0.826);
+}
+
+@media (max-width: 767px) {
+    .service-heading p:nth-child(1) {
+        font-size: 3rem;
+
+    }
+
+    .service-name {
+        font-size: 2rem;
+    }
+
+    .service-heading {
+        max-width: 90%;
+    }
+
+    .bg-img {
+        opacity: 0;
+    }
+
+    .service-type {
+        flex-direction: column;
+    }
+
+    .abt-service {
+        max-width: 90%;
+    }
+
+
+}

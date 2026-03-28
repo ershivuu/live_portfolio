@@ -1,0 +1,132 @@
+.abt-heading {
+    font-family: var(--font-family-heading);
+    font-size: 9rem;
+}
+
+.abt-description {
+    font-family: var(--font-family-base);
+}
+
+.about-wrapper {
+    padding-top: 30px;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 50px;
+    margin-block: -20px;
+}
+
+.abt-description {
+    display: flex;
+    max-width: 30%;
+    align-items: center;
+    text-align: right;
+}
+
+.abt-description p {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+}
+
+.abt-heading {
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.about-wrapper:has(.abt-heading:hover) .abt-heading:not(:hover) {
+    filter: blur(8px);
+    opacity: 0.4;
+}
+
+.abt-heading:hover {
+    transform: scale(1.1);
+}
+
+.abt-description {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease;
+}
+
+.about-section:has(.abt-heading:hover) .abt-description {
+    opacity: 1;
+    max-height: 200px;
+}
+
+@media (max-width: 767px) {
+    .abt-heading {
+        font-size: 4rem !important;
+    }
+
+    .about-section {
+        padding-inline: 10px;
+        margin-block: -20px;
+    }
+
+    .abt-description {
+        max-width: 100%;
+    }
+
+    .about-wrapper:has(.abt-heading:hover) .abt-heading:not(:hover) {
+        filter: none;
+        opacity: 1;
+    }
+
+    .abt-heading {
+        transform: none !important;
+    }
+
+    .abt-description {
+        opacity: 1;
+        max-height: none;
+        overflow: visible;
+        transition: none;
+        margin-top: -8%;
+        text-align: right;
+    }
+
+    .about-section:has(.abt-heading:hover) .abt-description {
+        opacity: 1;
+        max-height: none;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .about-wrapper:has(.abt-heading:hover) .abt-heading:not(:hover) {
+        filter: none;
+        opacity: 1;
+    }
+
+    .abt-heading {
+        transform: none !important;
+    }
+
+    .abt-description {
+        opacity: 1;
+        max-height: none;
+        overflow: visible;
+        transition: none;
+        margin-top: -8%;
+        text-align: right;
+    }
+
+    .about-section:has(.abt-heading:hover) .abt-description {
+        opacity: 1;
+        max-height: none;
+    }
+
+    .abt-heading {
+        font-size: 6rem;
+    }
+
+    .abt-description {
+        max-width: 100%;
+        padding-top: 20px;
+
+    }
+}

@@ -1,0 +1,48 @@
+.nav-section {
+    max-width: 1550px;
+    margin: auto;
+}
+
+.nav-bg-color {
+    background-color: rgba(0, 0, 0, 0.395) !important;
+}
+
+.header-logo img {
+    width: 50px;
+}
+
+.nav-link,
+.active {
+    font-family: var(--font-family-heading) !important;
+    color: var(--color-text-primary);
+    padding: 0 15px 0 15px !important;
+    font-size: var(--font-size-heading-sm) !important;
+
+}
+
+.nav-link:hover,
+.active:hover {
+    color: goldenrod !important;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-left: auto;
+        align-items: flex-end;
+
+    }
+
+    .nav-link {
+        padding-block: 5px !important;
+    }
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* .navbar-toggler {
+    border: none !important;
+} */
