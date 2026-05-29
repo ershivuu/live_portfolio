@@ -43,7 +43,7 @@ function Signature() {
         <div className="contact-info">
           <p>Let's work together</p>
           <p>
-            <a href="mailto:er.shivamsg@gmail.com">er.shivamsg@gmail.com</a> ||
+            <a href="mailto:connect@ershivam.online">connect@ershivam.online</a> ||
             <a href="tel:+917879401825">+91 78794 01825</a>
           </p>
         </div>

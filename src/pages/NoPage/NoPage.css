@@ -1,0 +1,55 @@
+.nopage-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nopage-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 50px 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  color: white;
+}
+
+.nopage-card h1 {
+  font-size: 120px;
+  margin: 0;
+  line-height: 1;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.nopage-card h2 {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.nopage-card p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.redirect-text {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #f8fafc;
+  font-weight: 500;
+}
+
+.redirect-text span {
+  color: #38bdf8;
+  font-size: 24px;
+  font-weight: 700;
+}
